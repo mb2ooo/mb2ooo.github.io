@@ -7,7 +7,19 @@
     <title>Mohammad's Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png?v=2">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png?v=2">
+    <link rel="shortcut icon" href="images/favicon.png?v=2">
+    <link rel="apple-touch-icon" href="images/favicon.png?v=2">
+    <meta property="og:image" content="https://mb2ooo.github.io/images/favicon.png">  
+    <meta property="og:title" content="Mohamad Beydoun Portfolio">
+    <meta property="og:description" content="Computer Science Student | Sales Team Manager | Future Developer">
+    <meta property="og:image" content="https://mb2ooo.github.io/images/hero.jpg">
+    <meta property="og:url" content="https://mb2ooo.github.io">
+    <meta property="og:type" content="website">
 </head>
+
+
 
 <body>
 
@@ -24,6 +36,9 @@
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
+        <button id="theme-toggle" aria-label="Toggle dark mode">
+        <span class="toggle-icon">🌙</span>
+</button>
     </nav>
 
     <section id="about" class="section about">
@@ -48,7 +63,6 @@
             <p>
                 My goal is to become a skilled software developer who can build efficient, user-friendly systems and
                 continuously grow in the tech industry.
-            </p>
             </p>
         </div>
     </section>
@@ -108,6 +122,42 @@
     <footer>
         <p>&copy; 2026 Mohamad Beydoun. All Rights Reserved.</p>
     </footer>
+
+<script>
+  const toggleBtn = document.getElementById("theme-toggle");
+  const toggleIcon = document.querySelector(".toggle-icon");
+
+  function setTheme(theme) {
+    if (theme === "dark") {
+      document.body.classList.add("dark-mode");
+      toggleIcon.textContent = "☀️";
+      localStorage.setItem("theme", "dark");
+    } else {
+      document.body.classList.remove("dark-mode");
+      toggleIcon.textContent = "🌙";
+      localStorage.setItem("theme", "light");
+    }
+  }
+
+  toggleBtn.addEventListener("click", () => {
+    toggleIcon.style.opacity = "0";
+
+    setTimeout(() => {
+      const isDark = document.body.classList.contains("dark-mode");
+      setTheme(isDark ? "light" : "dark");
+      toggleIcon.style.opacity = "1";
+    }, 150);
+  });
+
+  window.addEventListener("load", () => {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+      setTheme("dark");
+    } else {
+      setTheme("light");
+    }
+  });
+</script>
 
 </body>
 
