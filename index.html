@@ -1,390 +1,300 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="system">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mohammad Beydoun — Software Developer, Sales Team Manager, and Founder of Navo.">
-    <title>Mohammad Beydoun | Software Developer & Founder of Navo</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mohammad Beydoun — Software Developer, Founder of Navo, and Sales Team Manager building practical software around real business problems.">
+  <meta name="color-scheme" content="light dark">
+  <title>Mohammad Beydoun | Software Developer & Founder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="site-shell">
-        <header class="site-header">
-            <a class="brand" href="#home" aria-label="Go to homepage">
-                <span class="brand-mark">MB</span>
-                <span class="brand-copy">
-                    <strong>Mohammad Beydoun</strong>
-                    <small>Software Developer · Founder · Sales Leader</small>
-                </span>
-            </a>
+  <div class="ambient-code" aria-hidden="true">
+    <pre>const build = (problem) =&gt; {
+  understand(problem);
+  scope();
+  ship();
+  test();
+  improve();
+};</pre>
+  </div>
 
-            <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
-                <span></span>
-                <span></span>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Mohammad Beydoun homepage">
+        <span class="brand-mark">MB</span>
+        <span class="brand-copy">
+          <strong>Mohammad Beydoun</strong>
+          <small>Software Developer · Founder · Sales Leader</small>
+        </span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#process">Process</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a class="nav-cta" href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="theme-picker" data-theme-picker>
+          <button class="theme-trigger" type="button" aria-haspopup="listbox" aria-expanded="false">
+            <span>◐</span><span class="theme-label">System</span><span>⌄</span>
+          </button>
+          <div class="theme-menu" role="listbox" aria-label="Color theme">
+            <button type="button" data-theme-value="system">System preference</button>
+            <button type="button" data-theme-value="light">Light</button>
+            <button type="button" data-theme-value="dark">Dark</button>
+          </div>
+        </div>
+
+        <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow">Software Developer · Founder of Navo · Sales Team Manager</p>
+          <h1>I build software around real business problems.</h1>
+          <p class="hero-lead">
+            I build software, manage sales teams, and work directly with the problems businesses face every day.
+            I’m currently developing Navo, a financial management platform for freelancers and small business owners.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://navofinance.com/" target="_blank" rel="noopener noreferrer">Visit Navo</a>
+            <a class="button button-secondary" href="#work">Explore My Work</a>
+          </div>
+
+          <div class="hero-proof">
+            <div><strong>Founder & Developer</strong><span>Building Navo from product direction through production.</span></div>
+            <div><strong>Sales Team Manager</strong><span>Leading a 10-person sales team at Outbound Solutions LLC.</span></div>
+            <div><strong>1st Place</strong><span>University Lab Expo winner for Vapor.</span></div>
+          </div>
+        </div>
+
+        <aside class="identity-panel">
+          <div class="portrait-frame">
+            <div class="portrait-fallback"><span>MB</span><small>Add images/profile.jpg</small></div>
+            <img src="images/profile.jpg" alt="Mohammad Beydoun" onerror="this.remove()">
+          </div>
+          <div class="identity-copy">
+            <span class="availability"><i></i> Building Navo · Available for select projects</span>
+            <h2>Mohammad Beydoun</h2>
+            <p>Software developer with commercial experience in sales leadership, customer operations, and product development.</p>
+            <div class="location-row">Beirut, Lebanon · Remote collaboration</div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section" id="work">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Work</p>
+          <h2>Products and systems I’ve actually built.</h2>
+          <p>I focus on projects that solve a concrete problem and require real workflows, data, interfaces, and technical decisions.</p>
+        </div>
+
+        <article class="case-study featured-case">
+          <div>
+            <div class="case-topline"><span>01 · Flagship</span><span class="status-pill">Private Beta</span></div>
+            <h3>Navo</h3>
+            <p class="case-role">Founder & Developer</p>
+            <p>Navo is a financial management platform designed to help freelancers and small business owners understand where they stand, what needs attention, and what action to take next.</p>
+
+            <div class="case-columns">
+              <div>
+                <h4>What it covers</h4>
+                <ul>
+                  <li>Customers, vendors, invoices, expenses, and supplier bills</li>
+                  <li>Recurring revenue and recurring obligations</li>
+                  <li>Business and personal finance views</li>
+                  <li>Financial reporting and decision-oriented workflows</li>
+                  <li>Workspace access, authentication, and account security</li>
+                </ul>
+              </div>
+              <div>
+                <h4>My responsibility</h4>
+                <ul>
+                  <li>Product and UX direction</li>
+                  <li>Frontend and backend development</li>
+                  <li>Database design and migrations</li>
+                  <li>Testing, deployment, and production QA</li>
+                  <li>Customer discovery and commercialization</li>
+                </ul>
+              </div>
+            </div>
+
+            <a class="text-link" href="https://navofinance.com/" target="_blank" rel="noopener noreferrer">Explore Navo →</a>
+          </div>
+
+          <div class="gallery">
+            <button class="gallery-main" type="button" data-lightbox="images/navo-dashboard.jpg">
+              <img src="images/navo-dashboard.jpg" alt="Navo dashboard">
             </button>
+            <div class="gallery-strip">
+              <button type="button" data-lightbox="images/navo-invoices.jpg"><img src="images/navo-invoices.jpg" alt="Navo invoices"></button>
+              <button type="button" data-lightbox="images/navo-expenses.jpg"><img src="images/navo-expenses.jpg" alt="Navo expenses"></button>
+              <button type="button" data-lightbox="images/navo-reports.jpg"><img src="images/navo-reports.jpg" alt="Navo reports"></button>
+            </div>
+          </div>
+        </article>
 
-            <nav class="site-nav" aria-label="Primary navigation">
-                <a href="#work">Work</a>
-                <a href="#experience">Experience</a>
-                <a href="#skills">Skills</a>
-                <a href="#education">Education</a>
-                <a href="#contact" class="nav-cta">Contact</a>
-            </nav>
-        </header>
+        <div class="project-grid">
+          <article class="case-study">
+            <div class="case-topline"><span>02 · AI Application</span><span class="status-pill alt">University Project</span></div>
+            <h3>GameSense AI</h3>
+            <p class="case-role">Co-Developer · Three-Person Team</p>
+            <p>A gameplay-analysis application where users could create an account, upload gameplay footage, and receive automated coaching-oriented feedback.</p>
+            <ul>
+              <li>Uploaded videos were processed into frames for analysis</li>
+              <li>Gemini API generated coaching feedback from extracted frames</li>
+              <li>Included account, upload, analysis, history, and report workflows</li>
+              <li>Designed around Valorant, Fortnite, Assetto Corsa, CS:GO, and Forza Horizon</li>
+            </ul>
+            <div class="pipeline"><span>Upload</span><b>→</b><span>Frame extraction</span><b>→</b><span>Gemini analysis</span><b>→</b><span>Coaching report</span></div>
+            <div class="mini-gallery">
+              <button type="button" data-lightbox="images/gamesense-dashboard.jpg"><img src="images/gamesense-dashboard.jpg" alt="GameSense AI dashboard"></button>
+              <button type="button" data-lightbox="images/gamesense-analyze.jpg"><img src="images/gamesense-analyze.jpg" alt="GameSense AI analysis screen"></button>
+            </div>
+          </article>
 
-        <main>
-            <section class="hero section" id="home">
-                <div class="hero-copy">
-                    <p class="eyebrow">Software Developer · Founder of Navo · Sales Team Manager</p>
-                    <h1>I build software around real business problems.</h1>
-                    <p class="hero-lead">
-                        I’m a software developer and founder building Navo, a financial management platform for freelancers and small business owners. Alongside development, I manage a sales team at Outbound Solutions LLC, giving me a direct view into how businesses sell, operate, and make decisions.
-                    </p>
+          <article class="case-study">
+            <div class="case-topline"><span>03 · Desktop Application</span><span class="status-pill winner">1st Place · Lab Expo</span></div>
+            <h3>Vapor</h3>
+            <p class="case-role">Java + SQL Desktop Application</p>
+            <p>A Steam-inspired desktop game launcher created for a university lab expo, with account management, a game library, store-style browsing, and database-backed user data.</p>
+            <ul>
+              <li>Java desktop interface</li>
+              <li>Database-backed accounts and application data</li>
+              <li>Multiple games integrated into the launcher</li>
+              <li>Awarded 1st place for UI, functionality, and database design</li>
+            </ul>
+          </article>
 
-                    <div class="hero-actions">
-                        <a class="button button-primary" href="https://navofinance.com/" target="_blank" rel="noopener noreferrer">Visit Navo</a>
-                        <a class="button button-secondary" href="#work">View Selected Work</a>
-                    </div>
+          <article class="case-study compact-project">
+            <div class="case-topline"><span>04 · Applied Web Project</span></div>
+            <h3>Pet Care & Vaccination Tracking</h3>
+            <p class="case-role">Web Programming Project</p>
+            <p>A pet-care management system centered on pet profiles, vaccination schedules, health history, reminders, and practical care-management workflows.</p>
+          </article>
+        </div>
+      </section>
 
-                    <div class="hero-proof">
-                        <div>
-                            <strong>Private Beta</strong>
-                            <span>Navo is actively being developed and evaluated by prospective customers.</span>
-                        </div>
-                        <div>
-                            <strong>10-Person Sales Team</strong>
-                            <span>Managing a core sales team at Outbound Solutions LLC.</span>
-                        </div>
-                        <div>
-                            <strong>1st Place</strong>
-                            <span>University Lab Expo winner for Vapor, a Java + SQL desktop game launcher.</span>
-                        </div>
-                    </div>
-                </div>
+      <section class="section" id="process">
+        <div class="section-heading">
+          <p class="eyebrow">How I Work</p>
+          <h2>From business problem to working software.</h2>
+          <p>I prefer to understand the workflow before deciding what should be built.</p>
+        </div>
 
-                <aside class="hero-card">
-                    <div class="hero-card-top">
-                        <span class="status-dot"></span>
-                        <span>Currently building</span>
-                    </div>
-                    <h2>Navo</h2>
-                    <p>
-                        A financial management platform designed to help freelancers and small business owners understand where they stand, what needs attention, and what action to take next.
-                    </p>
-                    <div class="mini-stack">
-                        <span>Python</span>
-                        <span>Flask</span>
-                        <span>SQL</span>
-                        <span>JavaScript</span>
-                    </div>
-                    <a class="text-link" href="https://navofinance.com/" target="_blank" rel="noopener noreferrer">Open navofinance.com →</a>
-                </aside>
-            </section>
+        <div class="process-grid">
+          <article><span>01</span><h3>Discover</h3><p>Understand the business, users, pain points, and current workflow.</p></article>
+          <article><span>02</span><h3>Scope</h3><p>Define requirements, priorities, constraints, and the first version.</p></article>
+          <article><span>03</span><h3>Build</h3><p>Design and implement iteratively with clear checkpoints.</p></article>
+          <article><span>04</span><h3>Test</h3><p>Verify workflows, edge cases, responsiveness, and real user behavior.</p></article>
+          <article><span>05</span><h3>Deliver & Improve</h3><p>Deploy, gather feedback, and refine the system.</p></article>
+        </div>
+      </section>
 
-            <section class="section" id="work">
-                <div class="section-heading">
-                    <p class="eyebrow">Selected work</p>
-                    <h2>Projects that show how I think and build.</h2>
-                    <p>
-                        I focus on work that solves a concrete problem, not just isolated coding exercises.
-                    </p>
-                </div>
+      <section class="section" id="services">
+        <div class="section-heading">
+          <p class="eyebrow">What I Can Build</p>
+          <h2>Software built around the way a business operates.</h2>
+        </div>
 
-                <article class="project project-featured">
-                    <div class="project-copy">
-                        <div class="project-meta">
-                            <span class="project-index">01</span>
-                            <span class="pill">Flagship project</span>
-                        </div>
-                        <h3>Navo</h3>
-                        <p class="project-role">Founder & Developer</p>
-                        <p class="project-description">
-                            Navo is a private-beta financial management platform built for freelancers and small business owners who need a clearer view of business finances, obligations, recurring costs, customers, invoices, and financial next steps.
-                        </p>
+        <div class="capability-grid">
+          <article><h3>Web Applications</h3><p>Custom internal tools and customer-facing applications with structured workflows.</p></article>
+          <article><h3>Business Automation</h3><p>Replace repetitive manual processes with software that is easier to track and operate.</p></article>
+          <article><h3>Dashboards & Reporting</h3><p>Turn operational or financial data into usable views and decision-support interfaces.</p></article>
+          <article><h3>AI Integrations</h3><p>Integrate existing AI APIs into practical workflows where they genuinely help.</p></article>
+          <article><h3>Database-Driven Systems</h3><p>Users, permissions, records, relationships, history, reporting, and secure workflows.</p></article>
+        </div>
+      </section>
 
-                        <div class="project-grid">
-                            <div>
-                                <h4>What it includes</h4>
-                                <ul>
-                                    <li>Customer and vendor management</li>
-                                    <li>Invoices, supplier bills, expenses, and recurring revenue</li>
-                                    <li>Business and personal finance views</li>
-                                    <li>Financial reporting and cash-flow decision support</li>
-                                    <li>Workspace access, account security, and administrative controls</li>
-                                    <li>Custom browser-consistent controls and responsive UI</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h4>My role</h4>
-                                <ul>
-                                    <li>Product direction and UX decisions</li>
-                                    <li>Frontend and backend development</li>
-                                    <li>Database and entitlement design</li>
-                                    <li>Security, testing, deployment, and production maintenance</li>
-                                    <li>Customer discovery and commercial positioning</li>
-                                </ul>
-                            </div>
-                        </div>
+      <section class="section split-section" id="experience">
+        <div class="section-heading sticky-heading">
+          <p class="eyebrow">Professional Experience</p>
+          <h2>Software thinking backed by business experience.</h2>
+          <p>My development work is informed by direct experience with sales teams, SMB customers, outbound operations, technical support, and customer-facing workflows.</p>
+        </div>
 
-                        <div class="project-actions">
-                            <a class="button button-primary" href="https://navofinance.com/" target="_blank" rel="noopener noreferrer">Visit Navo</a>
-                            <span class="private-note">Source repository is private.</span>
-                        </div>
-                    </div>
+        <div class="timeline">
+          <article><span>Apr 2025 — Present</span><div><h3>Sales Team Manager</h3><strong>Outbound Solutions LLC · Remote</strong><p>Manage a 10-person sales team while working alongside a separate email-outreach team of 12+ members.</p></div></article>
+          <article><span>Mar 2025 — Oct 2025</span><div><h3>Sales Representative</h3><strong>NexoBridge · Beirut, Lebanon</strong><p>Worked on targeted outreach, qualification, messaging, and pipeline coordination.</p></div></article>
+          <article><span>May 2024 — Dec 2024</span><div><h3>Sales Marketing Executive</h3><strong>Yellow Pages / Pages Jaunes (Canada)</strong><p>Worked with small and medium-sized businesses on SEO, branding, listings, and online visibility.</p></div></article>
+          <article><span>Oct 2022 — Oct 2023</span><div><h3>Store Cashier & Technical Support</h3><strong>Astro Gaming Lounge · Beirut, Lebanon</strong><p>Combined customer-facing operations with troubleshooting of gaming systems and network issues.</p></div></article>
+        </div>
+      </section>
 
-                    <div class="project-visual navo-visual" aria-hidden="true">
-                        <div class="mock-browser">
-                            <div class="mock-browser-bar">
-                                <span></span><span></span><span></span>
-                            </div>
-                            <div class="mock-layout">
-                                <div class="mock-sidebar"></div>
-                                <div class="mock-main">
-                                    <div class="mock-hero"></div>
-                                    <div class="mock-stats">
-                                        <div></div><div></div><div></div><div></div>
-                                    </div>
-                                    <div class="mock-card large"></div>
-                                    <div class="mock-card"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </article>
+      <section class="section" id="skills">
+        <div class="section-heading">
+          <p class="eyebrow">Technical Capabilities</p>
+          <h2>Technologies I use to turn ideas into working systems.</h2>
+        </div>
 
-                <div class="project-list">
-                    <article class="project">
-                        <div class="project-meta">
-                            <span class="project-index">02</span>
-                            <span class="pill">University project</span>
-                        </div>
-                        <h3>GameSense AI</h3>
-                        <p class="project-role">Co-Developer</p>
-                        <p class="project-description">
-                            A gameplay-analysis application built with a teammate. Users could create an account, upload gameplay footage, and receive automated coaching-oriented feedback.
-                        </p>
-                        <ul>
-                            <li>Used the Gemini API for gameplay analysis</li>
-                            <li>Processed uploaded videos into frames based on video length</li>
-                            <li>Generated feedback from those frames</li>
-                            <li>Designed for games including Valorant, Fortnite, Assetto Corsa, CS:GO, and Forza Horizon</li>
-                        </ul>
-                    </article>
+        <div class="skills-grid">
+          <article><h3>Web</h3><div><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive UI</span></div></article>
+          <article><h3>Backend & Data</h3><div><span>Python</span><span>Flask</span><span>SQL</span><span>SQLAlchemy</span><span>Database Design</span></div></article>
+          <article><h3>Programming</h3><div><span>Python</span><span>Java</span><span>JavaScript</span><span>C++</span></div></article>
+          <article><h3>Engineering & Integration</h3><div><span>Git</span><span>GitHub</span><span>REST APIs</span><span>Testing</span><span>FFmpeg</span><span>Gemini API</span></div></article>
+        </div>
+      </section>
 
-                    <article class="project">
-                        <div class="project-meta">
-                            <span class="project-index">03</span>
-                            <span class="pill pill-accent">1st Place · Lab Expo</span>
-                        </div>
-                        <h3>Vapor</h3>
-                        <p class="project-role">Java + SQL Desktop Application</p>
-                        <p class="project-description">
-                            A Steam-inspired desktop game launcher built for a university lab expo. It could launch multiple games and used a SQL-backed account system.
-                        </p>
-                        <ul>
-                            <li>Java desktop interface</li>
-                            <li>SQL-backed signup and user data</li>
-                            <li>Supported multiple playable games</li>
-                            <li>Awarded 1st place for UI, functionality, and database design</li>
-                        </ul>
-                    </article>
+      <section class="section personal-story">
+        <div><p class="eyebrow">How I Think</p><h2>I care about whether software is useful after it ships.</h2></div>
+        <div>
+          <p>My background sits between software and commercial operations. I build, test, refine, and deploy software, but I also spend my workday managing salespeople and thinking about customer needs, process friction, trust, and adoption.</p>
+          <p>I care about whether someone understands the software, trusts it, and can use it without needing a developer beside them.</p>
+        </div>
+      </section>
 
-                    <article class="project">
-                        <div class="project-meta">
-                            <span class="project-index">04</span>
-                            <span class="pill">Applied web project</span>
-                        </div>
-                        <h3>Pet Care & Vaccination Tracking System</h3>
-                        <p class="project-role">Web Programming Project</p>
-                        <p class="project-description">
-                            A pet-care management system centered on vaccination schedules, pet records, health history, and reminders.
-                        </p>
-                        <ul>
-                            <li>Pet profiles and vaccination tracking</li>
-                            <li>Health-history records</li>
-                            <li>Reminder-oriented workflows</li>
-                            <li>Designed as an applied portfolio project rather than a simple demo</li>
-                        </ul>
-                    </article>
-                </div>
-            </section>
+      <section class="section education-section" id="education">
+        <div><p class="eyebrow">Education</p><h2>Academic background</h2></div>
+        <article class="education-card">
+          <div><h3>American University of Science and Technology (AUST)</h3><p>Bachelor of Arts — Computer Science</p></div>
+          <span>Final-year student</span>
+        </article>
+      </section>
 
-            <section class="section split-section" id="experience">
-                <div class="section-heading sticky-heading">
-                    <p class="eyebrow">Professional experience</p>
-                    <h2>Business experience alongside software development.</h2>
-                    <p>
-                        My software work is informed by direct experience with sales teams, SMB customers, outbound operations, technical support, and customer-facing workflows.
-                    </p>
-                </div>
+      <section class="section contact-section" id="contact">
+        <div>
+          <p class="eyebrow">Let’s Talk</p>
+          <h2>Need software that fits the way your business actually works?</h2>
+          <p>If Navo fits your needs, I’d be happy to discuss it. If your workflow needs something specialized, I’m also open to discussing a purpose-built solution.</p>
+          <div class="contact-links">
+            <a href="https://navofinance.com/" target="_blank" rel="noopener noreferrer">Navo</a>
+            <a href="https://www.linkedin.com/in/moebeydoun/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://github.com/mb2ooo/" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
 
-                <div class="timeline">
-                    <article class="timeline-item">
-                        <div class="timeline-date">Apr 2025 — Present</div>
-                        <div>
-                            <h3>Sales Team Manager</h3>
-                            <p class="timeline-company">Outbound Solutions LLC · Remote</p>
-                            <p>
-                                Manage a 10-person sales team while working alongside a separate email-outreach team of 12+ members. My role includes team leadership, coaching, sales operations, and day-to-day execution.
-                            </p>
-                        </div>
-                    </article>
+        <div class="contact-actions">
+          <a class="button button-primary" href="mailto:mohammadbeydoun55@gmail.com">Discuss a Project</a>
+          <a class="button button-secondary" href="https://navofinance.com/" target="_blank" rel="noopener noreferrer">View Navo</a>
+          <a class="button button-secondary" href="https://wa.me/9613769789" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        </div>
+      </section>
+    </main>
 
-                    <article class="timeline-item">
-                        <div class="timeline-date">Mar 2025 — Oct 2025</div>
-                        <div>
-                            <h3>Sales Representative</h3>
-                            <p class="timeline-company">NexoBridge · Beirut, Lebanon</p>
-                            <p>
-                                Worked on targeted outreach, qualification, messaging, and pipeline coordination.
-                            </p>
-                        </div>
-                    </article>
+    <footer>
+      <span>© <span id="year"></span> Mohammad Beydoun</span>
+      <span>Beirut, Lebanon · Built with HTML, CSS, and JavaScript.</span>
+    </footer>
+  </div>
 
-                    <article class="timeline-item">
-                        <div class="timeline-date">May 2024 — Dec 2024</div>
-                        <div>
-                            <h3>Sales Marketing Executive</h3>
-                            <p class="timeline-company">Yellow Pages / Pages Jaunes (Canada) · Beirut, Lebanon</p>
-                            <p>
-                                Worked with small and medium-sized businesses on SEO, branding, listings, and online visibility.
-                            </p>
-                        </div>
-                    </article>
+  <div class="lightbox" data-lightbox-modal aria-hidden="true">
+    <button type="button" class="lightbox-close" aria-label="Close screenshot">×</button>
+    <img alt="">
+  </div>
 
-                    <article class="timeline-item">
-                        <div class="timeline-date">Oct 2022 — Oct 2023</div>
-                        <div>
-                            <h3>Store Cashier & Technical Support</h3>
-                            <p class="timeline-company">Astro Gaming Lounge · Beirut, Lebanon</p>
-                            <p>
-                                Combined customer-facing operations with troubleshooting of gaming systems and network issues.
-                            </p>
-                        </div>
-                    </article>
-                </div>
-            </section>
-
-            <section class="section" id="skills">
-                <div class="section-heading">
-                    <p class="eyebrow">Capabilities</p>
-                    <h2>Technical skills I actively use.</h2>
-                    <p>
-                        I prefer showing practical capability over arbitrary “skill percentages.”
-                    </p>
-                </div>
-
-                <div class="skills-grid">
-                    <article class="skill-card">
-                        <h3>Web Development</h3>
-                        <div class="skill-tags">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                            <span>Responsive Design</span>
-                        </div>
-                    </article>
-
-                    <article class="skill-card">
-                        <h3>Backend & Data</h3>
-                        <div class="skill-tags">
-                            <span>Python</span>
-                            <span>Flask</span>
-                            <span>SQL</span>
-                            <span>SQLAlchemy</span>
-                            <span>Database Design</span>
-                        </div>
-                    </article>
-
-                    <article class="skill-card">
-                        <h3>Programming</h3>
-                        <div class="skill-tags">
-                            <span>Python</span>
-                            <span>Java</span>
-                            <span>JavaScript</span>
-                            <span>C++</span>
-                        </div>
-                    </article>
-
-                    <article class="skill-card">
-                        <h3>Tools & Integration</h3>
-                        <div class="skill-tags">
-                            <span>Git</span>
-                            <span>GitHub</span>
-                            <span>REST APIs</span>
-                            <span>Gemini API</span>
-                            <span>JSON</span>
-                            <span>FFmpeg</span>
-                        </div>
-                    </article>
-                </div>
-            </section>
-
-            <section class="section about-section">
-                <div>
-                    <p class="eyebrow">About</p>
-                    <h2>I care about whether the software is useful after it ships.</h2>
-                </div>
-                <div class="about-copy">
-                    <p>
-                        My background sits between software and commercial operations. I build, test, refine, and deploy software, but I also spend my workday managing salespeople and thinking about customer needs, process friction, trust, and adoption.
-                    </p>
-                    <p>
-                        That combination is a major part of why I started Navo. I’m interested in building systems that are understandable to non-technical users and useful enough to become part of how a business actually operates.
-                    </p>
-                </div>
-            </section>
-
-            <section class="section education-section" id="education">
-                <div class="section-heading compact-heading">
-                    <p class="eyebrow">Education</p>
-                    <h2>Academic background</h2>
-                </div>
-                <article class="education-card">
-                    <div>
-                        <h3>American University of Science and Technology (AUST)</h3>
-                        <p>Bachelor of Arts — Computer Science</p>
-                    </div>
-                    <span class="education-status">Final-year student</span>
-                </article>
-            </section>
-
-            <section class="section contact-section" id="contact">
-                <div>
-                    <p class="eyebrow">Contact</p>
-                    <h2>Need software built for your business?</h2>
-                    <p>
-                        If Navo fits your needs, I’d be happy to discuss it. If your workflow requires something more specialized, I’m also open to discussing custom software projects.
-                    </p>
-                </div>
-
-                <div class="contact-actions">
-                    <a class="button button-primary" href="mailto:mohammadbeydoun55@gmail.com">Email Me</a>
-                    <a class="button button-secondary" href="tel:+9613769789">Call Me</a>
-                    <a class="button button-secondary" href="https://wa.me/9613769789" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-                </div>
-
-                <div class="contact-links">
-                    <a href="https://navofinance.com/" target="_blank" rel="noopener noreferrer">Navo</a>
-                    <a href="https://www.linkedin.com/in/moebeydoun/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                    <a href="https://github.com/mb2ooo/" target="_blank" rel="noopener noreferrer">GitHub</a>
-                </div>
-
-                <p class="contact-note">
-                    Beirut, Lebanon · Available for remote collaboration
-                </p>
-            </section>
-        </main>
-
-        <footer class="site-footer">
-            <span>© <span id="year"></span> Mohammad Beydoun</span>
-            <span>Built with HTML, CSS, and JavaScript.</span>
-        </footer>
-    </div>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
